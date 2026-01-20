@@ -19,7 +19,6 @@
             }
         }
     </script>
-    </script>
     <style>
         input[type="number"]::-webkit-outer-spin-button,
         input[type="number"]::-webkit-inner-spin-button {
@@ -95,12 +94,10 @@
             <path d="M19 12H5M12 19l-7-7 7-7"/>
         </svg>
         Geri Dön
-    </button
-
-    </div>
+    </button>
 
     <!-- Set İsmi Modal -->
-    <div id="setNameModal" class="fixed inset-0 w-full h-full bg-black bg-opacity-50 z-50 flex items-center justify-center hidden modal">
+    <div id="setNameModal" class="fixed inset-0 w-full h-full bg-black bg-opacity-50 z-50 flex items-center justify-center hidden">
         <div class="bg-white rounded-2xl shadow-2xl p-8 w-full max-w-md mx-4">
             <h3 class="text-2xl font-bold text-gray-800 mb-6 text-center">Set İsmi Ne Olsun?</h3>
             <input type="text" id="setNameInput" class="w-full p-4 border-2 border-gray-300 rounded-xl mb-6 focus:border-blue-500 focus:ring-2 focus:ring-blue-200" placeholder="Set ismini girin">
@@ -111,14 +108,12 @@
         </div>
     </div>
 
-   <div class="max-w-7xl mx-auto">
+    <div class="max-w-7xl mx-auto">
         <!-- Başlık Bölümü -->
         <div class="text-center mb-12">
-            <h1 class="text-4xl font-bold text-gray-800 mb-4"> Set Ürün Karlılık Hesaplama Sistemi | OCAK 2026 </h1>
-            <p class="text-gray-600 max-w-2xl mx-auto"> 2026 Verileri Dikkate Alınarak Hesaplanmaktadır! | By Gurkan KUSCU
+            <h1 class="text-4xl font-bold text-gray-800 mb-4">Set Ürün Karlılık Hesaplama Sistemi | OCAK 2026</h1>
+            <p class="text-gray-600 max-w-2xl mx-auto">2026 Verileri Dikkate Alınarak Hesaplanmaktadır! | By Gurkan KUSCU</p>
         </div>
-
-        </h1>
         
         <div class="space-y-8">
             <!-- Ürün Seçim Bölümü -->
@@ -136,7 +131,6 @@
                                 class="w-full p-4 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-blue-500 focus:border-blue-500 transition-all duration-200 bg-gray-50 hover:bg-white"
                             >
                                 <option value="">Marka Seçiniz</option>
-                                <!-- Markalar JavaScript ile doldurulacak -->
                             </select>
                         </div>
 
@@ -148,12 +142,11 @@
                                 class="w-full p-4 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed transition-all duration-200 bg-gray-50 hover:bg-white"
                             >
                                 <option value="">Kategori Seçiniz</option>
-                                <!-- Kategoriler JavaScript ile doldurulacak -->
                             </select>
                         </div>
                     </div>
 
-                    <!-- Ürün seçimi - Marka ve Kategorinin altında -->
+                    <!-- Ürün seçimi -->
                     <div>
                         <label class="block text-sm font-semibold text-gray-700 mb-3">Ürün Seçin</label>
                         <select 
@@ -162,7 +155,6 @@
                             class="w-full p-4 border-2 border-gray-200 rounded-xl focus:ring-4 focus:ring-blue-500 focus:border-blue-500 disabled:bg-gray-100 disabled:cursor-not-allowed transition-all duration-200 bg-gray-50 hover:bg-white"
                         >
                             <option value="">Ürün Seçiniz</option>
-                            <!-- Ürünler JavaScript ile doldurulacak -->
                         </select>
                     </div>
                     
@@ -242,7 +234,7 @@
                     <div class="space-y-6">
                         <div class="grid grid-cols-2 gap-6">
                             <div>
-                                <label class="block text-sm font-semibold text-gray-70 mb-3">Toplam Alış Fiyatı (KDV Hariç)</label>
+                                <label class="block text-sm font-semibold text-gray-700 mb-3">Toplam Alış Fiyatı (KDV Hariç)</label>
                                 <input 
                                     type="number" 
                                     id="purchasePrice"
@@ -374,7 +366,7 @@
                             <div class="bg-gradient-to-br from-purple-50 to-purple-100 p-5 rounded-xl border-2 border-purple-200">
                                 <label class="block text-sm font-bold text-purple-700 mb-2">📢 Reklam Tutarı</label>
                                 <div class="text-lg font-bold text-purple-800" id="advertisementAmount">₺0.00</div>
-                                <div class="text-xs text-gray-50 mt-1">KDV Dahil</div>
+                                <div class="text-xs text-gray-600 mt-1">KDV Dahil</div>
                             </div>
                         </div>
                     </div>
@@ -424,7 +416,7 @@
                 </div>
             </div>
 
-            <!-- Yeni Eklenen Kar Paylaşımı Bölümü -->
+            <!-- Kar Paylaşımı Bölümü -->
             <div class="bg-white rounded-2xl shadow-xl p-8 border border-gray-100">
                 <h2 class="text-2xl font-bold mb-6 text-gray-800 flex items-center">
                     🤝 Kar Paylaşımı
@@ -522,7 +514,7 @@
     </div>
 
     <script>
-        // Sadece 5 ürün ile sınırlı veri
+        // Ürün verisi
         const productDataText = `SAP	ÜRÜN ADI	MARKA	KATEGORİ	HUNCA+KM SATIŞ FİYATI (TL)
 900004274	BLACK MAGIC KUTU KOFRE (M) EDT+DEO R23#	BLACK MAGIC	KOFRE	₺189,00
 405500191	SHE FUN BODY MIST (W) 200ML#	SHE	BODY MIST	₺84,00
@@ -672,7 +664,7 @@
 400500345	SHE LOVE EDT (W) 50ML L23#	SHE	EDT	₺131,00`;
 
         // Veriyi parse etme
-        const productLines = productDataText.split('\n').slice(1); // İlk satırı (başlık) atla
+        const productLines = productDataText.split('\n').slice(1);
         const productList = {};
         
         productLines.forEach(line => {
@@ -683,7 +675,6 @@
                 const brand = columns[2].trim();
                 const category = columns[3].trim();
                 
-                // Fiyatı parse etme (TL işaretini ve virgülü kaldırma)
                 let priceText = columns[4].trim();
                 priceText = priceText.replace('₺', '').replace(',', '.');
                 const price = parseFloat(priceText);
@@ -734,6 +725,20 @@
         // Set içindeki ürünleri saklamak için dizi
         let productSet = [];
         let savedSets = [];
+        
+        // Sayfa yüklendiğinde marka seçeneklerini doldur
+        window.addEventListener('DOMContentLoaded', function() {
+            // Marka seçeneklerini doldur
+            brands.forEach(brand => {
+                const option = document.createElement('option');
+                option.value = brand;
+                option.textContent = brand;
+                brandSelect.appendChild(option);
+            });
+            
+            updateQuantityDisplays();
+            updateCalculations();
+        });
         
         // Marka değiştiğinde
         brandSelect.addEventListener('change', function() {
@@ -1014,9 +1019,9 @@
             
             // Set bilgilerini oluştur
             const setInfo = {
-                id: Date.now(), // Benzersiz ID
+                id: Date.now(),
                 name: setName,
-                products: [...productSet], // Ürünlerin kopyası
+                products: [...productSet],
                 productCount: productSet.length,
                 productNames: productSet.map(p => p.name).join(', '),
                 salesPrice: salesPrice,
@@ -1129,7 +1134,7 @@
                 ]);
                 
                 const detailSheet = XLSX.utils.aoa_to_sheet(detailData);
-                XLSX.utils.book_append_sheet(workbook, detailSheet, set.name.substring(0, 30)); // Excel sayfa adı 31 karakterle sınırlı
+                XLSX.utils.book_append_sheet(workbook, detailSheet, set.name.substring(0, 30));
             });
             
             // Excel dosyasını indir
@@ -1181,11 +1186,11 @@
             let cargoPrice = 0;
             if (cargoTypeSelect.value === 'PTT-TEX' && salesPrice > 0) {
                 if (salesPrice >= 0 && salesPrice <= 149.99) {
-                    cargoPrice = 50; // KDV dahil
+                    cargoPrice = 50;
                 } else if (salesPrice >= 150 && salesPrice <= 299.99) {
-                    cargoPrice 90; // KDV dahil
+                    cargoPrice = 90;
                 } else if (salesPrice >= 300) {
-                    cargoPrice = 110; // KDV dahil
+                    cargoPrice = 110;
                 }
             } else if (cargoTypeSelect.value === 'Özel Kargo') {
                 cargoPrice = parseFloat(customCargoPriceInput.value) || 0;
@@ -1194,16 +1199,16 @@
             // Net kar hesaplamaları
             const netProfit = salesPrice - commissionAmount - cargoPrice - advertisementAmount - (purchasePrice * 1.20);
             
-            // NET KAR ORANI: Toplam Alış Maliyeti (KDV Dahil) oranına göre hesapla
+            // NET KAR ORANI
             const totalPurchaseWithVAT = purchasePrice * 1.20;
             const netProfitRate = totalPurchaseWithVAT ? (netProfit / totalPurchaseWithVAT) * 100 : 0;
             
             const finalProfit = netProfit - totalRedWhiteProfitWithVAT;
             
-            // Yeni hesaplamalar: Paylaşılacak Kar ve Hunca Kar Hak Ediş
-            const sharedProfit = finalProfit; // Paylaşılacak Kar (TL)
-            const sharedProfitRate = totalPurchaseWithVAT ? (sharedProfit / totalPurchaseWithVAT) * 100 : 0; // Paylaşılacak Kar (%)
-            const huncaProfitShare = sharedProfit / 2; // Hunca Kar Hak Ediş (Paylaşılacak Karın yarısı)
+            // Yeni hesaplamalar
+            const sharedProfit = finalProfit;
+            const sharedProfitRate = totalPurchaseWithVAT ? (sharedProfit / totalPurchaseWithVAT) * 100 : 0;
+            const huncaProfitShare = sharedProfit / 2;
             
             // Değerleri güncelle
             document.getElementById('huncaProfit').textContent = `₺${huncaProfit.toFixed(2)}`;
@@ -1262,19 +1267,6 @@
             updateCalculations();
             updateQuantityDisplays();
         }
-        
-        // Sayfa yüklendiğinde marka seçeneklerini doldur
-        window.addEventListener('DOMContentLoaded', function() {
-            brands.forEach(brand => {
-                const option = document.createElement('option');
-                option.value = brand;
-                option.textContent = brand;
-                brandSelect.appendChild(option);
-            });
-            
-            updateQuantityDisplays();
-            updateCalculations();
-        });
         
         // Geri dön butonu fonksiyonu
         function goBack() {
