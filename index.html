@@ -346,7 +346,7 @@
                             </div>
                             <div class="bg-gradient-to-br from-blue-50 to-blue-100 p-5 rounded-xl border-2 border-blue-200">
                                 <label class="block text-sm font-bold text-blue-700 mb-2">
-                                    🚚 Kargo Tutarı- <span id="cargoTypeLabel">PTT-TEX</span>
+                                    🚚  Tutarı- <span id="cargoTypeLabel">PTT-TEX</span>
                                 </label>
                                 <div id="standardCargo">
                                     <div class="text-lg font-bold text-blue-800" id="cargoPrice">₺0.00</div>
@@ -1185,11 +1185,11 @@
             // Kargo hesaplaması
             let cargoPrice = 0;
             if (cargoTypeSelect.value === 'PTT-TEX' && salesPrice > 0) {
-                if (salesPrice >= 0 && salesPrice <= 149.99) {
+                if (salesPrice >= 0 && salesPrice <= 199.99) {
                     cargoPrice = 50;
-                } else if (salesPrice >= 150 && salesPrice <= 299.99) {
-                    cargoPrice = 90;
-                } else if (salesPrice >= 300) {
+                } else if (salesPrice >= 200 && salesPrice <= 349.99) {
+                    cargoPrice = 81;
+                } else if (salesPrice >= 350) {
                     cargoPrice = 110;
                 }
             } else if (cargoTypeSelect.value === 'Özel Kargo') {
